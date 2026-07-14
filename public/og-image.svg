@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#050505"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#grad)" opacity="0.15"/>
+  <defs>
+    <radialGradient id="grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </radialGradient>
+  </defs>
+  <text x="600" y="280" font-family="Georgia,serif" font-size="72" font-weight="900" fill="#D4AF37" text-anchor="middle" letter-spacing="-2">AURA SCORE</text>
+  <text x="600" y="340" font-family="'Courier New',monospace" font-size="24" fill="#888" text-anchor="middle" letter-spacing="6">CALCULATE YOUR AURA</text>
+  <text x="600" y="420" font-family="Georgia,serif" font-size="120" font-weight="900" fill="#D4AF37" text-anchor="middle" opacity="0.15">∞</text>
+  <line x1="400" y1="470" x2="800" y2="470" stroke="#D4AF37" stroke-width="1" opacity="0.3"/>
+  <text x="600" y="510" font-family="'Courier New',monospace" font-size="14" fill="#555" text-anchor="middle" letter-spacing="3">AURA.CSSKEY.COM</text>
+</svg>
