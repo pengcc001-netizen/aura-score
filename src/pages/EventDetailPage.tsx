@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async'
-import { useParams, Link, Navigate } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { auraEvents } from '../data/auraEvents'
 import ShareButtons from '../components/ShareButtons'
 import Ad from '../components/Ad'
@@ -8,7 +8,7 @@ export default function EventDetailPage() {
   const { slug } = useParams<{ slug: string }>()
   const event = auraEvents.find(e => e.id === slug)
 
-  if (!event) return <Navigate to="/events" replace />
+  if (!event) return <div style={{ minHeight: '60vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 16 }}><Helmet><meta name="robots" content="noindex,nofollow" /></Helmet><h1 style={{ fontSize: 48, fontWeight: 800 }}>404</h1><p>Page not found</p><Link to="/" style={{ textDecoration: 'none', fontWeight: 600 }}>Go Home</Link></div>
 
   const url = `https://aura.csskey.com/events/${event.id}`
   const related = auraEvents.filter(e => e.category === event.category && e.id !== event.id).slice(0, 4)

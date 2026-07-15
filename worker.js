@@ -1,5 +1,5 @@
 // Valid route patterns for aura.csskey.com
-const STATIC_PAGES = new Set(['/', '/calculator', '/events', '/types', '/personas', '/leaderboard', '/blog', '/about', '/privacy', '/terms', '/contact', '/disclaimer']);
+const STATIC_PAGES = new Set(['/', '/events', '/types', '/personas', '/leaderboard', '/blog', '/about', '/privacy', '/terms', '/contact', '/disclaimer']);
 
 function isValidRoute(pathname) {
   if (STATIC_PAGES.has(pathname)) return true;

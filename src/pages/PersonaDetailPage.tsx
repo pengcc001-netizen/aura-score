@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async'
-import { useParams, Link, Navigate } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { auraPersonas } from '../data/auraPersonas'
 import Ad from '../components/Ad'
 import ShareButtons from '../components/ShareButtons'
@@ -8,7 +8,7 @@ export default function PersonaDetailPage() {
   const { slug } = useParams<{ slug: string }>()
   const persona = auraPersonas.find(p => p.slug === slug)
 
-  if (!persona) return <Navigate to="/personas" replace />
+  if (!persona) return <div style={{ minHeight: '60vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 16 }}><Helmet><meta name="robots" content="noindex,nofollow" /></Helmet><h1 style={{ fontSize: 48, fontWeight: 800 }}>404</h1><p>Page not found</p><Link to="/" style={{ textDecoration: 'none', fontWeight: 600 }}>Go Home</Link></div>
 
   const url = `https://aura.csskey.com/personas/${persona.slug}`
   const compatible = auraPersonas.filter(p => persona.compatibleWith.includes(p.slug))
