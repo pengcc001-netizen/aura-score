@@ -11,7 +11,6 @@ export default function LeaderboardPage() {
       <Helmet>
         <title>Aura Leaderboard - Highest & Lowest Aura Events | Aura Score</title>
         <meta name="description" content={`See the highest and lowest aura point events. From +77,000 for nailing karaoke to -2,000,000 for the screenshot disaster. The ultimate aura leaderboard.`} />
-        <link rel="canonical" href="https://aura.csskey.com/leaderboard" />
         <meta property="og:title" content="Aura Leaderboard - Highest & Lowest Aura Events | Aura Score" />
         <meta property="og:description" content={`See the highest and lowest aura point events. From +77,000 for nailing karaoke to -2,000,000 for the screenshot disaster. The ultimate aura leaderboard.`} />
         <meta property="og:url" content="https://aura.csskey.com/leaderboard" />

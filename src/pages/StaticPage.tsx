@@ -152,7 +152,6 @@ export default function StaticPage({ page }: { page: string }) {
       <Helmet>
         <title>{info.title} - Aura Score</title>
         <meta name="description" content={ogDescription} />
-        <link rel="canonical" href={canonicalUrl} />
         <meta property="og:title" content={`${info.title} - Aura Score`} />
         <meta property="og:description" content={ogDescription} />
         <meta property="og:url" content={canonicalUrl} />

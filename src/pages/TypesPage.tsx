@@ -9,7 +9,6 @@ export default function TypesPage() {
       <Helmet>
         <title>Aura Types - All {auraTypes.length} Aura Level Categories | Aura Score</title>
         <meta name="description" content={`Discover all ${auraTypes.length} aura types — from Aura Billionaire to Aura Nuclear Meltdown. Find out which aura tier you belong to based on your aura points.`} />
-        <link rel="canonical" href="https://aura.csskey.com/types" />
         <meta property="og:title" content={`Aura Types - All ${auraTypes.length} Aura Level Categories | Aura Score`} />
         <meta property="og:description" content={`Discover all ${auraTypes.length} aura types — from Aura Billionaire to Aura Nuclear Meltdown. Find out which aura tier you belong to based on your aura points.`} />
         <meta property="og:url" content="https://aura.csskey.com/types" />

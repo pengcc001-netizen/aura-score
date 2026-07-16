@@ -9,7 +9,6 @@ export default function BlogIndex() {
       <Helmet>
         <title>Aura Points Blog - Guides & Culture | Aura Score</title>
         <meta name="description" content={`Learn about aura points, aura farming techniques, and internet culture. ${blogPosts.length} articles covering everything from the basics to advanced aura strategy.`} />
-        <link rel="canonical" href="https://aura.csskey.com/blog" />
         <meta property="og:title" content="Aura Points Blog - Guides & Culture | Aura Score" />
         <meta property="og:description" content={`Learn about aura points, aura farming techniques, and internet culture. ${blogPosts.length} articles covering everything from the basics to advanced aura strategy.`} />
         <meta property="og:url" content="https://aura.csskey.com/blog" />

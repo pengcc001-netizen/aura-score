@@ -9,7 +9,6 @@ export default function PersonasPage() {
       <Helmet>
         <title>Aura Personas - {auraPersonas.length} Personality Types | Aura Score</title>
         <meta name="description" content={`Discover your aura persona — from The Main Character to The Lone Wolf. ${auraPersonas.length} unique personality types based on how you generate and spend aura in social situations.`} />
-        <link rel="canonical" href="https://aura.csskey.com/personas" />
         <meta property="og:title" content={`Aura Personas - ${auraPersonas.length} Personality Types | Aura Score`} />
         <meta property="og:description" content={`Discover your aura persona — from The Main Character to The Lone Wolf. ${auraPersonas.length} unique personality types based on how you generate and spend aura in social situations.`} />
         <meta property="og:url" content="https://aura.csskey.com/personas" />
