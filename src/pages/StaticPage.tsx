@@ -131,8 +131,7 @@ export default function StaticPage({ page }: { page: string }) {
   const info = PAGES[page]
   if (!info) return null
 
-  const canonicalPath = page === 'terms' ? 'legal-terms' : page
-  const canonicalUrl = `https://aura.csskey.com/${canonicalPath}`
+  const canonicalUrl = `https://aura.csskey.com/${page}`
   const ogDescription = `Aura Score ${info.title.toLowerCase()} page.`
 
   let isFirstParagraph = true
