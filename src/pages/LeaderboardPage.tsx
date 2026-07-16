@@ -11,6 +11,19 @@ export default function LeaderboardPage() {
       <Helmet>
         <title>Aura Leaderboard - Highest & Lowest Aura Events | Aura Score</title>
         <meta name="description" content={`See the highest and lowest aura point events. From +77,000 for nailing karaoke to -2,000,000 for the screenshot disaster. The ultimate aura leaderboard.`} />
+        <link rel="canonical" href="https://aura.csskey.com/leaderboard" />
+        <meta property="og:title" content="Aura Leaderboard - Highest & Lowest Aura Events | Aura Score" />
+        <meta property="og:description" content={`See the highest and lowest aura point events. From +77,000 for nailing karaoke to -2,000,000 for the screenshot disaster. The ultimate aura leaderboard.`} />
+        <meta property="og:url" content="https://aura.csskey.com/leaderboard" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Aura Leaderboard",
+          "description": "See the highest and lowest aura point events. The ultimate aura leaderboard.",
+          "url": "https://aura.csskey.com/leaderboard"
+        })}</script>
       </Helmet>
 
       <h2 className="eyebrow" style={{ marginBottom: 8 }}>Aura Leaderboard</h2>

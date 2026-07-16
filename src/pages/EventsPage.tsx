@@ -28,6 +28,12 @@ export default function EventsPage() {
       <Helmet>
         <title>All Aura Events - {auraEvents.length}+ Aura Point Events Explained | Aura Score</title>
         <meta name="description" content={`Browse ${auraEvents.length}+ aura point events. See how many points each event is worth, from +77,000 for nailing karaoke to -2,000,000 for the screenshot disaster.`} />
+        <link rel="canonical" href="https://aura.csskey.com/events" />
+        <meta property="og:title" content="All Aura Events - 80+ Aura Point Events Explained | Aura Score" />
+        <meta property="og:description" content={`Browse ${auraEvents.length}+ aura point events. See how many points each event is worth, from +77,000 for nailing karaoke to -2,000,000 for the screenshot disaster.`} />
+        <meta property="og:url" content="https://aura.csskey.com/events" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ItemList",

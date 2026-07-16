@@ -9,6 +9,19 @@ export default function BlogIndex() {
       <Helmet>
         <title>Aura Points Blog - Guides & Culture | Aura Score</title>
         <meta name="description" content={`Learn about aura points, aura farming techniques, and internet culture. ${blogPosts.length} articles covering everything from the basics to advanced aura strategy.`} />
+        <link rel="canonical" href="https://aura.csskey.com/blog" />
+        <meta property="og:title" content="Aura Points Blog - Guides & Culture | Aura Score" />
+        <meta property="og:description" content={`Learn about aura points, aura farming techniques, and internet culture. ${blogPosts.length} articles covering everything from the basics to advanced aura strategy.`} />
+        <meta property="og:url" content="https://aura.csskey.com/blog" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Aura Points Blog",
+          "description": `Learn about aura points, aura farming techniques, and internet culture. ${blogPosts.length} articles covering everything from the basics to advanced aura strategy.`,
+          "url": "https://aura.csskey.com/blog"
+        })}</script>
       </Helmet>
 
       <h2 className="eyebrow" style={{ marginBottom: 8 }}>Blog</h2>

@@ -131,13 +131,30 @@ export default function StaticPage({ page }: { page: string }) {
   const info = PAGES[page]
   if (!info) return null
 
+  const canonicalPath = page === 'terms' ? 'legal-terms' : page
+  const canonicalUrl = `https://aura.csskey.com/${canonicalPath}`
+  const ogDescription = `Aura Score ${info.title.toLowerCase()} page.`
+
   let isFirstParagraph = true
 
   return (
     <div className="fade-in" style={{ maxWidth: 680, margin: '0 auto' }}>
       <Helmet>
         <title>{info.title} - Aura Score</title>
-        <meta name="description" content={`Aura Score ${info.title.toLowerCase()} page.`} />
+        <meta name="description" content={ogDescription} />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:title" content={`${info.title} - Aura Score`} />
+        <meta property="og:description" content={ogDescription} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": info.title,
+          "description": ogDescription,
+          "url": canonicalUrl
+        })}</script>
       </Helmet>
 
       <article>

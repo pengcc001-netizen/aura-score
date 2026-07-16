@@ -9,6 +9,19 @@ export default function TypesPage() {
       <Helmet>
         <title>Aura Types - All {auraTypes.length} Aura Level Categories | Aura Score</title>
         <meta name="description" content={`Discover all ${auraTypes.length} aura types — from Aura Billionaire to Aura Nuclear Meltdown. Find out which aura tier you belong to based on your aura points.`} />
+        <link rel="canonical" href="https://aura.csskey.com/types" />
+        <meta property="og:title" content={`Aura Types - All ${auraTypes.length} Aura Level Categories | Aura Score`} />
+        <meta property="og:description" content={`Discover all ${auraTypes.length} aura types — from Aura Billionaire to Aura Nuclear Meltdown. Find out which aura tier you belong to based on your aura points.`} />
+        <meta property="og:url" content="https://aura.csskey.com/types" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Aura Types",
+          "description": `Discover all ${auraTypes.length} aura types — from Aura Billionaire to Aura Nuclear Meltdown. Find out which aura tier you belong to based on your aura points.`,
+          "url": "https://aura.csskey.com/types"
+        })}</script>
       </Helmet>
 
       <h2 className="eyebrow" style={{ marginBottom: 8 }}>Aura Classification</h2>

@@ -69,6 +69,12 @@ export default function Home() {
         <Helmet>
           <title>Aura Score Calculator - How Many Aura Points Do You Have? [2026]</title>
           <meta name="description" content="Calculate your Aura Score. Answer 12 questions about your daily behavior and discover your aura points, aura type, and aura persona. Free, no sign-up." />
+          <link rel="canonical" href="https://aura.csskey.com/" />
+          <meta property="og:title" content="Aura Score Calculator - How Many Aura Points Do You Have?" />
+          <meta property="og:description" content="Calculate your Aura Score. Answer 12 questions and discover your aura points, type, and persona." />
+          <meta property="og:url" content="https://aura.csskey.com/" />
+          <meta property="og:type" content="website" />
+          <meta name="twitter:card" content="summary" />
           <script type="application/ld+json">{JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebApplication",
