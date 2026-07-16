@@ -42,7 +42,7 @@ export default function EventsPage() {
         })}</script>
       </Helmet>
 
-      <div className="eyebrow" style={{ marginBottom: 8 }}>Aura Events Database</div>
+      <h2 className="eyebrow" style={{ marginBottom: 8 }}>Aura Events Database</h2>
       <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2rem, 4vw, 2.75rem)', fontWeight: 700, marginBottom: 16 }}>
         All Aura Point Events
       </h1>

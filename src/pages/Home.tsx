@@ -83,7 +83,7 @@ export default function Home() {
 
         {/* Hero */}
         <section style={{ textAlign: 'center', padding: '40px 0 60px' }}>
-          <div className="eyebrow" style={{ marginBottom: 16 }}>Aura Score Calculator · 2026</div>
+          <h2 className="eyebrow" style={{ marginBottom: 16 }}>Aura Score Calculator · 2026</h2>
           <h1 className="gradient-text" style={{
             fontSize: 'clamp(3rem, 8vw, 5.5rem)',
             fontWeight: 900,
@@ -144,7 +144,7 @@ export default function Home() {
 
         {/* How it works */}
         <section style={{ marginBottom: 60 }}>
-          <div className="eyebrow" style={{ textAlign: 'center', marginBottom: 8 }}>How It Works</div>
+          <h2 className="eyebrow" style={{ textAlign: 'center', marginBottom: 8 }}>How It Works</h2>
           <h2 style={{ textAlign: 'center', fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontFamily: 'var(--font-heading)', marginBottom: 40 }}>
             Three Steps to Your Aura Score
           </h2>
@@ -167,7 +167,7 @@ export default function Home() {
         <section>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: 24 }}>
             <div>
-              <div className="eyebrow" style={{ marginBottom: 4 }}>Featured</div>
+              <h2 className="eyebrow" style={{ marginBottom: 4 }}>Featured</h2>
               <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.5rem, 3vw, 2rem)' }}>Top Aura Events</h2>
             </div>
             <Link to="/events" style={{ color: 'var(--gold)', fontSize: 14, fontFamily: 'var(--font-mono)', fontWeight: 600 }}>View All →</Link>

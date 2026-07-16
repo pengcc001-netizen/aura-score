@@ -11,7 +11,7 @@ export default function BlogIndex() {
         <meta name="description" content={`Learn about aura points, aura farming techniques, and internet culture. ${blogPosts.length} articles covering everything from the basics to advanced aura strategy.`} />
       </Helmet>
 
-      <div className="eyebrow" style={{ marginBottom: 8 }}>Blog</div>
+      <h2 className="eyebrow" style={{ marginBottom: 8 }}>Blog</h2>
       <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2rem, 4vw, 2.75rem)', fontWeight: 700, marginBottom: 16 }}>
         Aura Points Guides
       </h1>

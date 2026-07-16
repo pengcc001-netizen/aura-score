@@ -42,7 +42,7 @@ export default function PersonaDetailPage() {
       </div>
 
       <div className="gold-card" style={{ padding: '28px 32px', marginBottom: 24 }}>
-        <div className="eyebrow" style={{ marginBottom: 12 }}>About This Persona</div>
+        <h2 className="eyebrow" style={{ marginBottom: 12 }}>About This Persona</h2>
         <p style={{ fontSize: 16, lineHeight: 1.8, color: 'var(--text)', fontFamily: 'var(--font-body)', textAlign: 'justify' }}>
           {persona.description}
         </p>
@@ -50,7 +50,7 @@ export default function PersonaDetailPage() {
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 24 }}>
         <div className="gold-card" style={{ padding: '24px 28px' }}>
-          <div className="eyebrow" style={{ marginBottom: 12, color: 'var(--positive)' }}>Strengths</div>
+          <h2 className="eyebrow" style={{ marginBottom: 12, color: 'var(--positive)' }}>Strengths</h2>
           <ul style={{ listStyle: 'none', padding: 0 }}>
             {persona.strengths.map((s, i) => (
               <li key={i} style={{ fontSize: 14, color: 'var(--text)', padding: '4px 0', fontFamily: 'var(--font-body)' }}>
@@ -60,7 +60,7 @@ export default function PersonaDetailPage() {
           </ul>
         </div>
         <div className="gold-card" style={{ padding: '24px 28px' }}>
-          <div className="eyebrow" style={{ marginBottom: 12, color: 'var(--negative)' }}>Weaknesses</div>
+          <h2 className="eyebrow" style={{ marginBottom: 12, color: 'var(--negative)' }}>Weaknesses</h2>
           <ul style={{ listStyle: 'none', padding: 0 }}>
             {persona.weaknesses.map((w, i) => (
               <li key={i} style={{ fontSize: 14, color: 'var(--text)', padding: '4px 0', fontFamily: 'var(--font-body)' }}>
@@ -72,7 +72,7 @@ export default function PersonaDetailPage() {
       </div>
 
       <div className="gold-card" style={{ padding: '24px 28px', marginBottom: 24, textAlign: 'center' }}>
-        <div className="eyebrow" style={{ marginBottom: 8 }}>Aura Multiplier</div>
+        <h2 className="eyebrow" style={{ marginBottom: 8 }}>Aura Multiplier</h2>
         <div className="mono gradient-text" style={{ fontSize: '1.5rem', fontWeight: 700 }}>{persona.auraMultiplier}</div>
       </div>
 
@@ -81,7 +81,7 @@ export default function PersonaDetailPage() {
       {/* Compatible personas */}
       {compatible.length > 0 && (
         <section style={{ marginBottom: 32 }}>
-          <div className="eyebrow" style={{ marginBottom: 12 }}>Most Compatible With</div>
+          <h2 className="eyebrow" style={{ marginBottom: 12 }}>Most Compatible With</h2>
           <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
             {compatible.map(p => (
               <Link key={p.slug} to={`/personas/${p.slug}`} style={{ textDecoration: 'none' }}>

@@ -47,14 +47,14 @@ export default function TypeDetailPage() {
       </div>
 
       <div className="gold-card" style={{ padding: '28px 32px', marginBottom: 32 }}>
-        <div className="eyebrow" style={{ marginBottom: 12 }}>Description</div>
+        <h2 className="eyebrow" style={{ marginBottom: 12 }}>Description</h2>
         <p style={{ fontSize: 16, lineHeight: 1.8, color: 'var(--text)', fontFamily: 'var(--font-body)', textAlign: 'justify' }}>
           {type.description}
         </p>
       </div>
 
       <div className="gold-card" style={{ padding: '28px 32px', marginBottom: 32 }}>
-        <div className="eyebrow" style={{ marginBottom: 12 }}>Defining Traits</div>
+        <h2 className="eyebrow" style={{ marginBottom: 12 }}>Defining Traits</h2>
         <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
           {type.traits.map((t, i) => <span key={i} className="chip chip-gold" style={{ fontSize: 13, padding: '6px 16px' }}>{t}</span>)}
         </div>

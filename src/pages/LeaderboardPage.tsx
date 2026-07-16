@@ -13,7 +13,7 @@ export default function LeaderboardPage() {
         <meta name="description" content={`See the highest and lowest aura point events. From +77,000 for nailing karaoke to -2,000,000 for the screenshot disaster. The ultimate aura leaderboard.`} />
       </Helmet>
 
-      <div className="eyebrow" style={{ marginBottom: 8 }}>Aura Leaderboard</div>
+      <h2 className="eyebrow" style={{ marginBottom: 8 }}>Aura Leaderboard</h2>
       <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2rem, 4vw, 2.75rem)', fontWeight: 700, marginBottom: 16 }}>
         Top Aura Events
       </h1>
@@ -24,7 +24,7 @@ export default function LeaderboardPage() {
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 32, marginBottom: 40 }}>
         {/* Top Gains */}
         <div>
-          <div className="eyebrow" style={{ color: 'var(--positive)', marginBottom: 16 }}>↑ TOP AURA GAINS</div>
+          <h2 className="eyebrow" style={{ color: 'var(--positive)', marginBottom: 16 }}>↑ TOP AURA GAINS</h2>
           <div className="gold-card" style={{ padding: '8px 24px' }}>
             {topGains.map((event, i) => (
               <div key={event.id} className="tx-row">
@@ -40,7 +40,7 @@ export default function LeaderboardPage() {
 
         {/* Top Losses */}
         <div>
-          <div className="eyebrow" style={{ color: 'var(--negative)', marginBottom: 16 }}>↓ TOP AURA LOSSES</div>
+          <h2 className="eyebrow" style={{ color: 'var(--negative)', marginBottom: 16 }}>↓ TOP AURA LOSSES</h2>
           <div className="gold-card" style={{ padding: '8px 24px' }}>
             {topLosses.map((event, i) => (
               <div key={event.id} className="tx-row">

@@ -73,7 +73,7 @@ export default function EventDetailPage() {
 
       {/* Analysis */}
       <article className="prose" style={{ marginBottom: 32 }}>
-        <div className="eyebrow" style={{ marginBottom: 12 }}>Aura Analysis</div>
+        <h2 className="eyebrow" style={{ marginBottom: 12 }}>Aura Analysis</h2>
         {event.analysis.split('\n').map((para, i) => (
           <p key={i} className={i === 0 ? 'dropcap' : ''} style={{
             fontSize: 16,
@@ -100,7 +100,7 @@ export default function EventDetailPage() {
       {/* Related events */}
       {related.length > 0 && (
         <section>
-          <div className="eyebrow" style={{ marginBottom: 12 }}>Related {event.category} events</div>
+          <h2 className="eyebrow" style={{ marginBottom: 12 }}>Related {event.category} events</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 12 }}>
             {related.map(e => (
               <Link key={e.id} to={`/events/${e.id}`} style={{ textDecoration: 'none' }}>

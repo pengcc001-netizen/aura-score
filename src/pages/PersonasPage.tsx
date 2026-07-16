@@ -11,7 +11,7 @@ export default function PersonasPage() {
         <meta name="description" content={`Discover your aura persona — from The Main Character to The Lone Wolf. ${auraPersonas.length} unique personality types based on how you generate and spend aura in social situations.`} />
       </Helmet>
 
-      <div className="eyebrow" style={{ marginBottom: 8 }}>Personality Archetypes</div>
+      <h2 className="eyebrow" style={{ marginBottom: 8 }}>Personality Archetypes</h2>
       <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2rem, 4vw, 2.75rem)', fontWeight: 700, marginBottom: 16 }}>
         Aura Personas
       </h1>

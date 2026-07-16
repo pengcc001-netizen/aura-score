@@ -11,7 +11,7 @@ export default function TypesPage() {
         <meta name="description" content={`Discover all ${auraTypes.length} aura types — from Aura Billionaire to Aura Nuclear Meltdown. Find out which aura tier you belong to based on your aura points.`} />
       </Helmet>
 
-      <div className="eyebrow" style={{ marginBottom: 8 }}>Aura Classification</div>
+      <h2 className="eyebrow" style={{ marginBottom: 8 }}>Aura Classification</h2>
       <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2rem, 4vw, 2.75rem)', fontWeight: 700, marginBottom: 16 }}>
         Aura Types
       </h1>
