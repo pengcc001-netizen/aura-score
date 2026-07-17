@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async'
+import { Link } from 'react-router-dom'
 import { auraEvents } from '../data/auraEvents'
 import Ad from '../components/Ad'
 
@@ -39,6 +40,7 @@ export default function LeaderboardPage() {
           <h2 className="eyebrow" style={{ color: 'var(--positive)', marginBottom: 16 }}>↑ TOP AURA GAINS</h2>
           <div className="gold-card" style={{ padding: '8px 24px' }}>
             {topGains.map((event, i) => (
+              <Link key={event.id} to={`/events/${event.id}`} style={{ textDecoration: 'none' }}>
               <div key={event.id} className="tx-row">
                 <span className="mono" style={{ color: 'var(--gold)', fontSize: 12, width: 24 }}>{i + 1}</span>
                 <span style={{ color: 'var(--text)', flex: 1, paddingRight: 16, fontSize: 12, fontFamily: 'var(--font-body)' }}>{event.title}</span>
@@ -46,6 +48,7 @@ export default function LeaderboardPage() {
                   +{event.points.toLocaleString()}
                 </span>
               </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -55,6 +58,7 @@ export default function LeaderboardPage() {
           <h2 className="eyebrow" style={{ color: 'var(--negative)', marginBottom: 16 }}>↓ TOP AURA LOSSES</h2>
           <div className="gold-card" style={{ padding: '8px 24px' }}>
             {topLosses.map((event, i) => (
+              <Link key={event.id} to={`/events/${event.id}`} style={{ textDecoration: 'none' }}>
               <div key={event.id} className="tx-row">
                 <span className="mono" style={{ color: 'var(--negative)', fontSize: 12, width: 24 }}>{i + 1}</span>
                 <span style={{ color: 'var(--text)', flex: 1, paddingRight: 16, fontSize: 12, fontFamily: 'var(--font-body)' }}>{event.title}</span>
@@ -62,6 +66,7 @@ export default function LeaderboardPage() {
                   {event.points.toLocaleString()}
                 </span>
               </div>
+              </Link>
             ))}
           </div>
         </div>

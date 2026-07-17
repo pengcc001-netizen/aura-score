@@ -21,6 +21,7 @@ export default function EventDetailPage() {
         <meta property="og:title" content={`${event.title} — ${event.points > 0 ? '+' : ''}${event.points.toLocaleString()} Aura Points`} />
         <meta property="og:description" content={event.description} />
         <meta property="og:url" content={url} />
+        <meta property="og:type" content="article" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Article",
