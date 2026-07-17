@@ -34,6 +34,15 @@ export default function EventDetailPage() {
           "dateModified": "2026-07-01",
           "mainEntityOfPage": url
         })}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aura.csskey.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Events", "item": "https://aura.csskey.com/events" },
+            { "@type": "ListItem", "position": 3, "name": event.title, "item": url }
+          ]
+        })}</script>
       </Helmet>
 
       {/* Breadcrumb */}

@@ -31,6 +31,16 @@ export default function TypeDetailPage() {
           "url": url,
           "author": { "@type": "Person", "name": "Jordan Reeves" },
           "publisher": { "@type": "Organization", "name": "Aura Score" },
+          "mainEntityOfPage": url
+        })}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aura.csskey.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Types", "item": "https://aura.csskey.com/types" },
+            { "@type": "ListItem", "position": 3, "name": type.name, "item": url }
+          ]
         })}</script>
       </Helmet>
 
