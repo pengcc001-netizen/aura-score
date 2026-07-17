@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async'
+﻿import { Helmet } from 'react-helmet-async'
 import { useParams, Link } from 'react-router-dom'
 import { auraPersonas } from '../data/auraPersonas'
 import Ad from '../components/Ad'
@@ -8,7 +8,7 @@ export default function PersonaDetailPage() {
   const { slug } = useParams<{ slug: string }>()
   const persona = auraPersonas.find(p => p.slug === slug)
 
-  if (!persona) return <div style={{ minHeight: '60vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 16 }}><Helmet><meta name="robots" content="noindex,nofollow" /></Helmet><h1 style={{ fontSize: 48, fontWeight: 800 }}>404</h1><p>Page not found</p><Link to="/" style={{ textDecoration: 'none', fontWeight: 600 }}>Go Home</Link></div>
+  if (!persona) return <div style={{ minHeight: '60vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 16 }}><Helmet><meta name="robots" content="noindex,nofollow" /><title>404 - Not Found | Aura Score</title></Helmet><h1 style={{ fontSize: 48, fontWeight: 800 }}>404</h1><p>Page not found</p><Link to="/" style={{ textDecoration: 'none', fontWeight: 600 }}>Go Home</Link></div>
 
   const url = `https://aura.csskey.com/personas/${persona.slug}`
   const compatible = auraPersonas.filter(p => persona.compatibleWith.includes(p.slug))
@@ -26,7 +26,7 @@ export default function PersonaDetailPage() {
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Article",
-          "headline": `${persona.name} — Aura Persona`,
+          "headline": `${persona.name} 鈥?Aura Persona`,
           "description": persona.description,
           "url": url,
           "author": { "@type": "Person", "name": "Jordan Reeves" },
@@ -35,7 +35,7 @@ export default function PersonaDetailPage() {
       </Helmet>
 
       <div style={{ marginBottom: 24 }}>
-        <Link to="/personas" style={{ color: 'var(--text-faint)', fontSize: 12, fontFamily: 'var(--font-mono)' }}>← All Personas</Link>
+        <Link to="/personas" style={{ color: 'var(--text-faint)', fontSize: 12, fontFamily: 'var(--font-mono)' }}>鈫?All Personas</Link>
       </div>
 
       <div style={{ textAlign: 'center', marginBottom: 40 }}>
@@ -69,7 +69,7 @@ export default function PersonaDetailPage() {
           <ul style={{ listStyle: 'none', padding: 0 }}>
             {persona.weaknesses.map((w, i) => (
               <li key={i} style={{ fontSize: 14, color: 'var(--text)', padding: '4px 0', fontFamily: 'var(--font-body)' }}>
-                <span style={{ color: 'var(--negative)', marginRight: 8 }}>−</span>{w}
+                <span style={{ color: 'var(--negative)', marginRight: 8 }}>鈭?/span>{w}
               </li>
             ))}
           </ul>
@@ -101,7 +101,7 @@ export default function PersonaDetailPage() {
       )}
 
       <div style={{ marginTop: 32 }}>
-        <ShareButtons url={url} title={`${persona.name} — ${persona.tagline}`} />
+        <ShareButtons url={url} title={`${persona.name} 鈥?${persona.tagline}`} />
       </div>
     </div>
   )

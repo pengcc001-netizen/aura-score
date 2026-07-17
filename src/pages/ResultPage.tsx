@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+﻿import { useState, useEffect } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { useParams, Link } from 'react-router-dom'
 import { quizQuestions } from '../data/questions'
@@ -26,7 +26,7 @@ export default function ResultPage() {
   if (!decoded) {
     return (
       <div style={{ textAlign: 'center', padding: '60px 0' }}>
-        <Helmet><meta name="robots" content="noindex,nofollow" /></Helmet>
+        <Helmet><meta name="robots" content="noindex,nofollow" /><title>404 - Not Found | Aura Score</title></Helmet>
         <p style={{ color: 'var(--text-soft)', fontFamily: 'var(--font-mono)' }}>Invalid aura result link.</p>
         <Link to="/" className="btn btn-gold" style={{ marginTop: 16 }}>Take the Quiz</Link>
       </div>
@@ -60,7 +60,7 @@ export default function ResultPage() {
   return (
     <div className="fade-in" style={{ maxWidth: 680, margin: '0 auto' }}>
       <Helmet>
-        <title>Aura Score: {totalPoints.toLocaleString()} points — {auraType.name}</title>
+        <title>Aura Score: {totalPoints.toLocaleString()} points 鈥?{auraType.name}</title>
         <meta name="robots" content="noindex,nofollow" />
       </Helmet>
 
@@ -68,7 +68,7 @@ export default function ResultPage() {
       <div className="gold-card" style={{ padding: '40px 32px', marginBottom: 32 }}>
         <div style={{ textAlign: 'center', marginBottom: 32 }}>
           <div className="mono" style={{ fontSize: 11, letterSpacing: '0.3em', color: 'var(--gold)', marginBottom: 8 }}>
-            AURA BANK · SHARED STATEMENT
+            AURA BANK 路 SHARED STATEMENT
           </div>
           <div style={{ width: 60, height: 1, background: 'var(--gold)', margin: '0 auto 24px', opacity: 0.5 }} />
         </div>
@@ -136,13 +136,13 @@ export default function ResultPage() {
       </div>
 
       <div style={{ textAlign: 'center', marginBottom: 32 }}>
-        <ShareButtons url={shareUrl} title={`My aura score is ${totalPoints.toLocaleString()} points — I'm a ${auraType.name}! Calculate yours:`} />
+        <ShareButtons url={shareUrl} title={`My aura score is ${totalPoints.toLocaleString()} points 鈥?I'm a ${auraType.name}! Calculate yours:`} />
       </div>
 
       <Ad />
 
       <div style={{ textAlign: 'center', marginBottom: 40 }}>
-        <Link to="/" className="btn btn-gold">Calculate Your Own Aura →</Link>
+        <Link to="/" className="btn btn-gold">Calculate Your Own Aura 鈫?/Link>
       </div>
     </div>
   )

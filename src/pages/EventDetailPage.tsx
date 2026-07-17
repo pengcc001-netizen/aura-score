@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async'
+﻿import { Helmet } from 'react-helmet-async'
 import { useParams, Link } from 'react-router-dom'
 import { auraEvents } from '../data/auraEvents'
 import ShareButtons from '../components/ShareButtons'
@@ -8,7 +8,7 @@ export default function EventDetailPage() {
   const { slug } = useParams<{ slug: string }>()
   const event = auraEvents.find(e => e.id === slug)
 
-  if (!event) return <div style={{ minHeight: '60vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 16 }}><Helmet><meta name="robots" content="noindex,nofollow" /></Helmet><h1 style={{ fontSize: 48, fontWeight: 800 }}>404</h1><p>Page not found</p><Link to="/" style={{ textDecoration: 'none', fontWeight: 600 }}>Go Home</Link></div>
+  if (!event) return <div style={{ minHeight: '60vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 16 }}><Helmet><meta name="robots" content="noindex,nofollow" /><title>404 - Not Found | Aura Score</title></Helmet><h1 style={{ fontSize: 48, fontWeight: 800 }}>404</h1><p>Page not found</p><Link to="/" style={{ textDecoration: 'none', fontWeight: 600 }}>Go Home</Link></div>
 
   const url = `https://aura.csskey.com/events/${event.id}`
   const related = auraEvents.filter(e => e.category === event.category && e.id !== event.id).slice(0, 4)
@@ -18,7 +18,7 @@ export default function EventDetailPage() {
       <Helmet>
         <title>{event.title} - {event.points > 0 ? '+' : ''}{event.points.toLocaleString()} Aura Points | Aura Score</title>
         <meta name="description" content={event.description} />
-        <meta property="og:title" content={`${event.title} — ${event.points > 0 ? '+' : ''}${event.points.toLocaleString()} Aura Points`} />
+        <meta property="og:title" content={`${event.title} 鈥?${event.points > 0 ? '+' : ''}${event.points.toLocaleString()} Aura Points`} />
         <meta property="og:description" content={event.description} />
         <meta property="og:url" content={url} />
         <meta property="og:type" content="article" />
@@ -38,7 +38,7 @@ export default function EventDetailPage() {
 
       {/* Breadcrumb */}
       <div style={{ marginBottom: 24 }}>
-        <Link to="/events" style={{ color: 'var(--text-faint)', fontSize: 12, fontFamily: 'var(--font-mono)' }}>← All Events</Link>
+        <Link to="/events" style={{ color: 'var(--text-faint)', fontSize: 12, fontFamily: 'var(--font-mono)' }}>鈫?All Events</Link>
       </div>
 
       {/* Tags */}
@@ -95,7 +95,7 @@ export default function EventDetailPage() {
       {/* Share */}
       <div style={{ marginBottom: 40 }}>
         <div className="section-label" style={{ marginBottom: 12, textAlign: 'center' }}>Share This Event</div>
-        <ShareButtons url={url} title={`${event.title} — ${event.points > 0 ? '+' : ''}${event.points.toLocaleString()} aura points`} />
+        <ShareButtons url={url} title={`${event.title} 鈥?${event.points > 0 ? '+' : ''}${event.points.toLocaleString()} aura points`} />
       </div>
 
       {/* Related events */}
