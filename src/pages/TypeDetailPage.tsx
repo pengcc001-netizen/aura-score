@@ -18,6 +18,11 @@ export default function TypeDetailPage() {
       <Helmet>
         <title>{type.name} ({type.range} Aura Points) | Aura Score</title>
         <meta name="description" content={`${type.name}: ${type.description} Point range: ${type.range}. Learn about the traits, strengths, and characteristics of this aura type.`} />
+        <meta property="og:title" content={`${type.name} (${type.range} Aura Points)`} />
+        <meta property="og:description" content={`${type.name}: ${type.description} Point range: ${type.range}.`} />
+        <meta property="og:url" content={url} />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Article",

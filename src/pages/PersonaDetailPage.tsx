@@ -18,6 +18,11 @@ export default function PersonaDetailPage() {
       <Helmet>
         <title>{persona.name} - Aura Persona Guide | Aura Score</title>
         <meta name="description" content={`${persona.name}: ${persona.description} Strengths: ${persona.strengths.join(', ')}. Discover your aura persona.`} />
+        <meta property="og:title" content={`${persona.name} - Aura Persona Guide`} />
+        <meta property="og:description" content={`${persona.name}: ${persona.description}`} />
+        <meta property="og:url" content={url} />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Article",
