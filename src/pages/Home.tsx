@@ -36,7 +36,7 @@ export default function Home() {
       setTotalPoints(total)
       setPhase('result')
       // Encode answers for sharing
-      const encoded = btoa(JSON.stringify(newAnswers.map(a => a.optionIndex)))
+      const encoded = btoa(JSON.stringify(newAnswers.map(a => a.optionIndex))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '')
       window.history.replaceState(null, '', `/r/${encoded}`)
     }
   }
