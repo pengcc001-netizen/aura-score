@@ -31,6 +31,7 @@ export default function TypeDetailPage() {
           "url": url,
           "author": { "@type": "Person", "name": "Jordan Reeves" },
           "publisher": { "@type": "Organization", "name": "Aura Score" },
+          "datePublished": "2026-07-01",
           "mainEntityOfPage": url
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
