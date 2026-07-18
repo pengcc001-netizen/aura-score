@@ -60,7 +60,7 @@ export default function ResultPage() {
   return (
     <div className="fade-in" style={{ maxWidth: 680, margin: '0 auto' }}>
       <Helmet>
-        <title>Aura Score: {totalPoints.toLocaleString()} points ?{auraType.name}</title>
+        <title>Aura Score: {totalPoints.toLocaleString()} points — {auraType.name}</title>
         <meta name="robots" content="noindex,nofollow" />
         <meta property="og:title" content={`My Aura Score is ${totalPoints.toLocaleString()} points — I'm a ${auraType.name}!`} />
         <meta property="og:description" content={auraType.description} />
@@ -149,7 +149,7 @@ export default function ResultPage() {
       <Ad />
 
       <div style={{ textAlign: 'center', marginBottom: 40 }}>
-        <Link to="/" className="btn btn-gold">Calculate Your Own Aura →/Link>
+        <Link to="/" className="btn btn-gold">Calculate Your Own Aura →</Link>
       </div>
     </div>
   )

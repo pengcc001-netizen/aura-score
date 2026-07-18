@@ -79,7 +79,7 @@ export default function PersonaDetailPage() {
           <ul style={{ listStyle: 'none', padding: 0 }}>
             {persona.weaknesses.map((w, i) => (
               <li key={i} style={{ fontSize: 14, color: 'var(--text)', padding: '4px 0', fontFamily: 'var(--font-body)' }}>
-                <span style={{ color: 'var(--negative)', marginRight: 8 }}>−/span>{w}
+                <span style={{ color: 'var(--negative)', marginRight: 8 }}>−</span>{w}
               </li>
             ))}
           </ul>
