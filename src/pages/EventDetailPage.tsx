@@ -1,4 +1,4 @@
-﻿import { Helmet } from 'react-helmet-async'
+import { Helmet } from 'react-helmet-async'
 import { useParams, Link } from 'react-router-dom'
 import { auraEvents } from '../data/auraEvents'
 import ShareButtons from '../components/ShareButtons'
@@ -18,7 +18,7 @@ export default function EventDetailPage() {
       <Helmet>
         <title>{event.title} - {event.points > 0 ? '+' : ''}{event.points.toLocaleString()} Aura Points | Aura Score</title>
         <meta name="description" content={event.description} />
-        <meta property="og:title" content={`${event.title} 鈥?${event.points > 0 ? '+' : ''}${event.points.toLocaleString()} Aura Points`} />
+        <meta property="og:title" content={`${event.title} —${event.points > 0 ? '+' : ''}${event.points.toLocaleString()} Aura Points`} />
         <meta property="og:description" content={event.description} />
         <meta property="og:url" content={url} />
         <meta property="og:type" content="article" />
@@ -47,7 +47,7 @@ export default function EventDetailPage() {
 
       {/* Breadcrumb */}
       <div style={{ marginBottom: 24 }}>
-        <Link to="/events" style={{ color: 'var(--text-faint)', fontSize: 12, fontFamily: 'var(--font-mono)' }}>鈫?All Events</Link>
+        <Link to="/events" style={{ color: 'var(--text-faint)', fontSize: 12, fontFamily: 'var(--font-mono)' }}>→All Events</Link>
       </div>
 
       {/* Tags */}
@@ -104,7 +104,7 @@ export default function EventDetailPage() {
       {/* Share */}
       <div style={{ marginBottom: 40 }}>
         <div className="section-label" style={{ marginBottom: 12, textAlign: 'center' }}>Share This Event</div>
-        <ShareButtons url={url} title={`${event.title} 鈥?${event.points > 0 ? '+' : ''}${event.points.toLocaleString()} aura points`} />
+        <ShareButtons url={url} title={`${event.title} —${event.points > 0 ? '+' : ''}${event.points.toLocaleString()} aura points`} />
       </div>
 
       {/* Related events */}

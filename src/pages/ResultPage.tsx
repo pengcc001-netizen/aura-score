@@ -1,4 +1,4 @@
-﻿import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { useParams, Link } from 'react-router-dom'
 import { quizQuestions } from '../data/questions'
@@ -75,7 +75,7 @@ export default function ResultPage() {
       <div className="gold-card" style={{ padding: '40px 32px', marginBottom: 32 }}>
         <div style={{ textAlign: 'center', marginBottom: 32 }}>
           <div className="mono" style={{ fontSize: 11, letterSpacing: '0.3em', color: 'var(--gold)', marginBottom: 8 }}>
-            AURA BANK 路 SHARED STATEMENT
+            AURA BANK · SHARED STATEMENT
           </div>
           <div style={{ width: 60, height: 1, background: 'var(--gold)', margin: '0 auto 24px', opacity: 0.5 }} />
         </div>
@@ -143,13 +143,13 @@ export default function ResultPage() {
       </div>
 
       <div style={{ textAlign: 'center', marginBottom: 32 }}>
-        <ShareButtons url={shareUrl} title={`My aura score is ${totalPoints.toLocaleString()} points 鈥?I'm a ${auraType.name}! Calculate yours:`} />
+        <ShareButtons url={shareUrl} title={`My aura score is ${totalPoints.toLocaleString()} points —I'm a ${auraType.name}! Calculate yours:`} />
       </div>
 
       <Ad />
 
       <div style={{ textAlign: 'center', marginBottom: 40 }}>
-        <Link to="/" className="btn btn-gold">Calculate Your Own Aura 鈫?/Link>
+        <Link to="/" className="btn btn-gold">Calculate Your Own Aura →/Link>
       </div>
     </div>
   )

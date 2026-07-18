@@ -1,4 +1,4 @@
-﻿import { Helmet } from 'react-helmet-async'
+import { Helmet } from 'react-helmet-async'
 import { useParams, Link } from 'react-router-dom'
 import { auraTypes } from '../data/auraTypes'
 import Ad from '../components/Ad'
@@ -26,7 +26,7 @@ export default function TypeDetailPage() {
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Article",
-          "headline": `${type.name} 鈥?Aura Type Guide`,
+          "headline": `${type.name} —Aura Type Guide`,
           "description": type.description,
           "url": url,
           "author": { "@type": "Person", "name": "Jordan Reeves" },
@@ -45,7 +45,7 @@ export default function TypeDetailPage() {
       </Helmet>
 
       <div style={{ marginBottom: 24 }}>
-        <Link to="/types" style={{ color: 'var(--text-faint)', fontSize: 12, fontFamily: 'var(--font-mono)' }}>鈫?All Types</Link>
+        <Link to="/types" style={{ color: 'var(--text-faint)', fontSize: 12, fontFamily: 'var(--font-mono)' }}>→All Types</Link>
       </div>
 
       <div style={{ textAlign: 'center', marginBottom: 40 }}>
@@ -84,7 +84,7 @@ export default function TypeDetailPage() {
           {type.name} is one of {auraTypes.length} aura types in the Aura Score system. Your aura type is determined by your total aura points, which are calculated based on your daily behavior and social interactions.
         </p>
         <p style={{ fontFamily: 'var(--font-body)', lineHeight: 1.8 }}>
-          People in the {type.name} category typically score between {type.range} aura points. This places them at tier {idx + 1} of {auraTypes.length} on the aura spectrum. The traits associated with this type 鈥?{type.traits.join(', ')} 鈥?reflect the behavioral patterns that tend to produce this aura level.
+          People in the {type.name} category typically score between {type.range} aura points. This places them at tier {idx + 1} of {auraTypes.length} on the aura spectrum. The traits associated with this type —{type.traits.join(', ')} —reflect the behavioral patterns that tend to produce this aura level.
         </p>
         <p style={{ fontFamily: 'var(--font-body)', lineHeight: 1.8 }}>
           Want to know your aura type? <Link to="/" style={{ color: 'var(--gold)' }}>Take the aura quiz</Link> and find out where you land on the spectrum. The quiz takes about 2 minutes and covers {type.traits.length === 4 ? 'all major' : 'key'} categories of social interaction.
@@ -92,7 +92,7 @@ export default function TypeDetailPage() {
       </section>
 
       <div style={{ marginTop: 32 }}>
-        <ShareButtons url={url} title={`${type.name} 鈥?${type.range} aura points`} />
+        <ShareButtons url={url} title={`${type.name} —${type.range} aura points`} />
       </div>
 
       {/* Adjacent types */}

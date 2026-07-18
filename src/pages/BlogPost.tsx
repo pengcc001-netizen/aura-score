@@ -1,4 +1,4 @@
-﻿import { Helmet } from 'react-helmet-async'
+import { Helmet } from 'react-helmet-async'
 import { useParams, Link } from 'react-router-dom'
 import { blogPosts } from '../data/blog'
 import ShareButtons from '../components/ShareButtons'
@@ -47,13 +47,13 @@ export default function BlogPost() {
       </Helmet>
 
       <div style={{ marginBottom: 24 }}>
-        <Link to="/blog" style={{ color: 'var(--text-faint)', fontSize: 12, fontFamily: 'var(--font-mono)' }}>鈫?All Articles</Link>
+        <Link to="/blog" style={{ color: 'var(--text-faint)', fontSize: 12, fontFamily: 'var(--font-mono)' }}>→All Articles</Link>
       </div>
 
       <div style={{ display: 'flex', gap: 8, marginBottom: 16 }}>
         <span className="chip chip-gold">{post.category}</span>
         <span className="mono" style={{ fontSize: 11, color: 'var(--text-faint)', letterSpacing: '0.1em', alignSelf: 'center' }}>
-          {post.date} 路 BY {post.author.toUpperCase()}
+          {post.date} · BY {post.author.toUpperCase()}
         </span>
       </div>
 
