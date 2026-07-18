@@ -143,7 +143,7 @@ export default function StaticPage({ page }: { page: string }) {
     )
 
   const canonicalUrl = `https://aura.csskey.com/${page}`
-  const ogDescription = `Aura Score ${info.title.toLowerCase()} page.`
+  const ogDescription = info.content.substring(0, 155).replace(/\n/g, ' ').replace(/[#*]/g, '').trim()
 
   let isFirstParagraph = true
 
