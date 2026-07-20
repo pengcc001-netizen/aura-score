@@ -102,7 +102,7 @@ export default function EventsPage() {
                   {event.points > 0 ? '+' : ''}{event.points.toLocaleString()}
                 </span>
               </div>
-              <h3 style={{ fontFamily: 'var(--font-body)', fontSize: 14, fontWeight: 600, color: 'var(--text)', lineHeight: 1.4 }}>{event.title}</h3>
+              <h2 style={{ fontFamily: 'var(--font-body)', fontSize: 14, fontWeight: 600, color: 'var(--text)', lineHeight: 1.4 }}>{event.title}</h2>
               <p style={{ fontSize: 12, color: 'var(--text-soft)', marginTop: 4, lineHeight: 1.5 }}>{event.description}</p>
             </div>
           </Link>
