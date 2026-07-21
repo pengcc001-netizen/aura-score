@@ -1,0 +1,27 @@
+# Aura Score
+
+> Free personal aura and energy reading tool. Discover your aura colors and energy patterns.
+
+## Main Pages
+- [Home](https://aura.csskey.com/)
+- [About](https://aura.csskey.com/about)
+- [Privacy Policy](https://aura.csskey.com/privacy)
+- [Terms of Service](https://aura.csskey.com/terms)
+- [Contact](https://aura.csskey.com/contact)
+
+## Features
+- Aura reading
+- Energy analysis
+- Chakra colors
+- Personal traits
+- Daily insights
+
+## Topics
+- aura reading
+- energy
+- chakra
+- personality
+- self-discovery
+
+## Sitemap
+https://aura.csskey.com/sitemap.xml
