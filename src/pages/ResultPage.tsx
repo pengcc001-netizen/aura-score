@@ -77,10 +77,7 @@ export default function ResultPage() {
           <div className="mono" style={{ fontSize: 11, letterSpacing: '0.3em', color: 'var(--gold)', marginBottom: 8 }}>
             AURA BANK · SHARED STATEMENT
           </div>
-          <div style={{ width: 60, height: 1, background: 'var(--gold)', margin: '0 auto 24px', opacity: 0.5 }} />
-        </div>
-
-        <div style={{ textAlign: 'center', marginBottom: 32 }}>
+          <div style={{ textAlign: 'center', marginBottom: 32 }}>
           <div className="section-label" style={{ marginBottom: 8 }}>Aura Balance</div>
           <div className="mono nums gradient-text" style={{
             fontSize: 'clamp(2.5rem, 6vw, 4rem)',

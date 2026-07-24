@@ -225,16 +225,7 @@ export default function Home() {
             </span>
           </div>
           <div style={{ height: 4, background: 'var(--border)', borderRadius: 2, overflow: 'hidden' }}>
-            <div style={{
-              height: '100%',
-              width: `${progress}%`,
-              background: 'linear-gradient(90deg, var(--gold-dark), var(--gold-bright))',
-              borderRadius: 2,
-              transition: 'width 0.4s ease',
-              boxShadow: '0 0 8px rgba(212, 175, 55, 0.3)',
-            }} />
-          </div>
-        </div>
+            </div>
 
         {/* Question */}
         <h2 style={{
@@ -333,10 +324,7 @@ export default function Home() {
             <div className="mono" style={{ fontSize: 11, letterSpacing: '0.3em', color: 'var(--gold)', marginBottom: 8 }}>
               AURA BANK · STATEMENT
             </div>
-            <div style={{ width: 60, height: 1, background: 'var(--gold)', margin: '0 auto 24px', opacity: 0.5 }} />
-          </div>
-
-          {/* Score */}
+            {/* Score */}
           <div style={{ textAlign: 'center', marginBottom: 32 }}>
             <div className="section-label" style={{ marginBottom: 8 }}>Your Aura Balance</div>
             <div className="mono nums gradient-text" style={{
